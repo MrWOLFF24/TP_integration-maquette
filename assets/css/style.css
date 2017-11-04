@@ -1,22 +1,25 @@
 /*------- GENERAL --------*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span,
+h1, h2, h3, h4, p,
+a, ul, li,
+article, aside, footer,
+header, nav, section{
     margin: 0;
     padding: 0;
     border: 0;
-    vertical-align: baseline;
     font-family: 'Roboto', sans-serif;
+}
+html {
+    background-color: #daede2;
+}
+h2 {
+    font-size: 39px;
+    font-weight: 300;
+}
+p {
+    font-size: 17px;
+    font-weight: 400;
+    padding: 15px 0;
 }
 a {
     text-decoration: none;
@@ -38,13 +41,9 @@ li {
     color: rgba(0, 0, 0, 0.5);
 }
 /*--- main_wrapper ---*/
-body {
-    background-color: #dbede2;
-}
-#main_content {
-    background-color: #79C4D2;
+#wrapper {
     margin: 65px 65px;
-    width: 90%;
+    background-color: #79C4D2;
 }
 /*------ header ------*/
 #header {
@@ -70,11 +69,6 @@ body {
     line-height: 25px;
     padding: 30px 60px;
     width: 50%;
-}
-.description>p {
-    font-size: 17px;
-    font-weight: 300;
-    padding: 15px 0;
 }
 .description>p>a {
     color: #fff;
@@ -112,13 +106,13 @@ li {
 /*---- layout_black ----*/
 .layout {
     background-color: #3B4553;
-    height: 450%;
+    height: 100%;
     width: 30%;
     opacity: 0.95;
     top: 0;
     right: 0;
     bottom: 0;
-    position: absolute;
+    position: fixed;
     z-index: 1;
 }
 /*------- The road --------*/
@@ -131,15 +125,6 @@ li {
     width: 47%;
     padding: 40px 30px 30px 110px;
 }
-#the_road>h2 {
-    font-size: 39px;
-    font-weight: 300;
-}
-#the_road>p {
-    font-size: 17px;
-    font-weight: 400;
-    padding: 15px 0;
-}
 /*------- What About ? -------*/
 #what_about {
     position: relative;
@@ -149,15 +134,6 @@ li {
     display: inline-block;
     margin-left: 100px;
     margin-top: 30px;
-}
-#what_about>h2 {
-    font-size: 39px;
-    font-weight: 300;
-}
-#what_about>p {
-    font-size: 17px;
-    font-weight: 400;
-    padding: 15px 0;
 }
 /*----- participation -----*/
 #participation {
@@ -172,35 +148,25 @@ li {
     color: #fff;
     display: inline-block;
 }
-#participation>h2 {
-    font-size: 39px;
-    font-weight: 300;
-}
-#participation>p {
-    font-size: 17px;
-    font-weight: 400;
-    padding: 15px 0;
-}
 #participation>p>a {
     color: #fff;
+}
+#participation>p>a:hover {
+    border-bottom: solid 1px rgba(255, 255, 255, 1);
 }
 /*------ benefits ------*/
 #benefits {
     background-color: rgba(255,255,255, 0.9);
     position: relative;
     top: 620px;
-    left: 84px;
-    width: 20%;
-    padding: 50px 31.5px;
+    left: 82px;
+    width: 21%;
+    padding: 50px 26px;
 }
 #benefits>h2 {
-    font-size: 39px;
-    font-weight: 300;
     padding: 10px 0 10PX;
 }
 #benefits>p {
-    font-size: 17px;
-    font-weight: 400;
     padding: 10px 0 10px;
 }
 /*------- requirement -------*/
@@ -210,17 +176,8 @@ li {
     z-index: 2;
     width: 50%;
     padding: 50px 40px;
-    top: 73px;
-    left: 377px;
-}
-#requirement>h2 {
-    font-size: 39px;
-    font-weight: 300;
-}
-#requirement>p {
-    font-size: 17px;
-    font-weight: 400;
-    padding: 15px;
+    top: 92px;
+    left: 376px;
 }
 /*------- footer -------*/
 #footer {
@@ -229,9 +186,8 @@ li {
     font-size: 17px;
     word-spacing: 10px;
     width: 30%;
-    margin-top: 150px;
     position: relative;
-    bottom: 77px;
+    margin-top: 150px;
+    bottom: 58px;
     left: 70px;
 }
-
