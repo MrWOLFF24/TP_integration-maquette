@@ -56,6 +56,10 @@ li {
     text-align: center;
     width: 220px;
 }
+#logo:hover {
+    background-color: #21A68D;
+    transform: rotate(-5deg);
+}
 #logo>a {
     color: #fff;
     text-decoration: none;
@@ -93,6 +97,9 @@ li {
     top: 130px;
     right: 65px;
     padding: 90px 55px;
+    animation: 1.5s asideContent 0s linear forwards;
+    -webkit-animation: 1.5s asideContent 0s linear forwards;
+    -moz-animation: 1.5s asideContent 0s linear forwards;
 }
 h3 {
     font-size: 39px;
@@ -121,7 +128,7 @@ li {
     position: absolute;
     z-index: 1;
     top: 900px;
-    left: 0;
+    left: -57%;
     width: 47%;
     padding: 40px 30px 30px 110px;
 }
@@ -140,7 +147,7 @@ li {
     position: relative;
     z-index: 2;
     background-color: #ea2e45;
-    opacity: 0.9;
+    opacity: 0;
     width: 30%;
     top: 500px;
     right: -80px;
@@ -180,7 +187,7 @@ li {
     left: 376px;
 }
 /*------- footer -------*/
-#footer {
+footer {
     background-color: rgb(246, 247, 146);
     padding: 20px 50px;
     font-size: 17px;
@@ -190,4 +197,45 @@ li {
     margin-top: 150px;
     bottom: 58px;
     left: 70px;
+}
+/*------ keyframes ------*/
+@keyframes asideContent {
+    0%{
+        right: 0;
+    }
+    100%{
+       right: 65px;
+    }
+}
+@-moz-keyframes asideContent {
+    0%{
+        right: 0;
+    }
+    100%{
+        right: 65px;
+    }
+}
+@-webkit-keyframes asideContent {
+    0%{
+        right: 0;
+    }
+    100%{
+        right: 65px;
+    }
+}
+@keyframes theRoad {
+    0%{
+        left: -57%;
+    }
+    100%{
+        left: 0;
+    }
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.9;
+    }
 }
